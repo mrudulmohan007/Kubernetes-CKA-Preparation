@@ -75,21 +75,21 @@ With multiple clusters set up, I needed to switch between them using kubectl. Be
 
 Installing kubectl on Arch Linux
 # Update your system
-sudo pacman -Syu 
+-->sudo pacman -Syu 
 
 # Install kubectl
-sudo pacman -S kubectl 
+-->sudo pacman -S kubectl 
 
 # Verify kubectl installation
-kubectl version --client
+-->kubectl version --client
 Now I need to switch between the two clusters using kubectl, let's do that:
 
 # List all contexts
-kubectl config get-contexts
+-->kubectl config get-contexts
 
 # Switch to a specific context
-kubectl config use-context kind-cka-cluster2 
-Checking Cluster Nodes
+-->kubectl config use-context kind-cka-cluster2 
+--Checking Cluster Nodes--
 To ensure that my clusters were up and running, I used the following command to display information about the nodes:
 
-kubectl get nodes
+--> kubectl get nodes
